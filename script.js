@@ -11,7 +11,7 @@ let cloudSituation = document.getElementById('cloud-situation');
 let resultContainer = document.getElementById('result');
 
 async function getWeatherForecast(cityName){
-    let API_URL= `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=026934933600dcb2a7f143d5925a1bf4`;
+    let API_URL= `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=[ADD_KEY]`;
     resultContainer.classList.add("result-container-display");
     try {
         const response = await fetch(API_URL);
