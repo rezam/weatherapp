@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@200;300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-image: url('https://cdn.dribbble.com/users/2925801/screenshots/14267279/media/52d8c22f9b47582ac2e82eaecddb2b19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-container-display {
+    display: block; 
+}
+
+#main {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#main .search-group {
+    display: flex;
+}
+
+#main .search-group input {
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 7px 15px;
+    width: 350px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Poppins;
+    margin-right: 10px;
+}
+
+#main .search-group .search-icon {
+    width: 25px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+#main .search-group .search-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+#result {
+    color: #fff;
+    padding: 30px 0 0 0;
+    display: none;
+}
+
+#result .row {
+    padding-bottom: 15px;
+}
+
+#result .row:last-child {
+    padding-bottom: 0;
+}
+
+#result .headline {
+    font-size: 1.9rem;
+}
+
+#result .degrees {
+    font-size: 2.5rem;
+}
+
+#result .degrees-svg {
+    font-size: 2rem;
+    
+}
+
+#result .details-container > div {
+    padding-bottom: 5px;
+}
+
+#result .cloud-container {
+    display: flex;
+    align-items: center;
+}
+
+#result .cloud-container svg {
+    padding-right: 10px;
+}
+
+#result .cloud-details {
+    display: flex;
+    flex-direction: column;
+}
+#result .cloud-details .cloud-desc {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+      #main .search-group input {
+          width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
